@@ -1,0 +1,343 @@
+[19:51, 21/11/2024] Kariuki's: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.A Mwaura Analytics Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px;
+        }
+
+        nav button {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        nav button:hover {
+            background: #0056b3;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background: #444;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://via.placeholder.com/100" alt="Logo">
+        <h1>P.A Mwaura Analytics Portfolio</h1>
+        <p>"Transforming Data into Insights"</p>
+    </header>
+    <nav>
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='projects.html'">Projects</button>
+        <button onclick="location.href='contact.html'">Contact</button>
+        <button onclick="location.href='reviews.html'">Reviews</button>
+    </nav>
+    <main>
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hi, I'm Andrew Mwaura, a data scientist with expertise in R, MySQL, Tableau, Python, and web scraping.</p>
+        <p>Explore my work and connect with me through the navigation buttons above!</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 P.A Mwaura Analytics Portfolio</p>
+    </footer>
+</body>
+</html>
+[19:51, 21/11/2024] Kariuki's: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px;
+        }
+
+        nav button {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        nav button:hover {
+            background: #0056b3;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .project {
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .project button {
+            background: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .project button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Projects</h1>
+    </header>
+    <nav>
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='projects.html'">Projects</button>
+        <button onclick="location.href='contact.html'">Contact</button>
+        <button onclick="location.href='reviews.html'">Reviews</button>
+    </nav>
+    <main>
+        <h2>My Projects</h2>
+        <div id="projects"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 P.A Mwaura Analytics Portfolio</p>
+    </footer>
+    <script>
+        const projectContainer = document.getElementById('projects');
+        const projects = [
+            { name: 'Predictive Sales Analysis', link: '#', reviews: 12 },
+            { name: 'Web Scraping Market Trends', link: '#', reviews: 8 },
+            { name: 'Tableau Dashboards', link: '#', reviews: 15 },
+            { name: 'SQL Data Pipelines', link: '#', reviews: 9 }
+        ];
+
+        projects.sort(() => Math.random() - 0.5); // Randomize the projects
+
+        projects.forEach(project => {
+            const div = document.createElement('div');
+            div.className = 'project';
+            div.innerHTML = `
+                <h3>${project.name}</h3>
+                <button onclick="location.href='${project.link}'">View Analysis</button>
+                <p>${project.reviews} Reviews</p>
+            `;
+            projectContainer.appendChild(div);
+        });
+    </script>
+</body>
+</html>
+[19:52, 21/11/2024] Kariuki's: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - P.A Mwaura Analytics Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f9f9f9;
+        }
+        header, footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: #007bff;
+        }
+        main {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        h1, h2 {
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>P.A Mwaura Analytics Ltd</h1>
+        <p>Contact Me</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:andrewpmwaura047@gmail.com">andrewpmwaura047@gmail.com</a></p>
+        <p>Phone: 0791560500</p>
+    </main>
+    <footer>
+        <p
+[19:52, 21/11/2024] Kariuki's: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions & Reviews</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px;
+        }
+
+        nav button {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        nav button:hover {
+            background: #0056b3;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .form-group {
+            margin: 15px 0;
+        }
+
+        textarea, input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        button.submit {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button.submit:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Questions & Reviews</h1>
+    </header>
+    <nav>
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='projects.html'">Projects</button>
+        <button onclick="location.href='contact.html'">Contact</button>
+        <button onclick="location.href='reviews.html'">Reviews</button>
+    </nav>
+    <main>
+        <h2>Submit a Review or Question</h2>
+        <form>
+            <div class="form-group">
+                <textarea placeholder="Write your question or review here..." rows="5"></textarea>
+            </div>
+            <button class
